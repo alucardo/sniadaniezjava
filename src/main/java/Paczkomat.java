@@ -1,4 +1,4 @@
-public class paczkomat {
+public class Paczkomat {
 
     public String name = "paczkomat1";
 

@@ -1,21 +1,14 @@
-public class app {
-    /*
-
-        Przemysław Olesiński
-        Senior Web Developer
-        8 lat doświadczenia komercyjnego
-
-     */
+public class App {
 
     public static void main(String[] args){
 
-        paczkomat paczkomat1 = new paczkomat();
+        Paczkomat paczkomat1 = new Paczkomat();
         paczkomat1.name = "paczkomat1";
         paczkomat1.getName();
         paczkomat1.setAndGetName("paczkomat1.0");
         paczkomat1.getName();
 
-//        paczkomatWolnoStojacy paczkomat2 = new paczkomatWolnoStojacy();
+//        PaczkomatWolnoStojacy paczkomat2 = new PaczkomatWolnoStojacy();
 //        paczkomat2.name = "paczkomat2";
 //        paczkomat2.getName();
 
