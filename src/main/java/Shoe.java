@@ -1,4 +1,7 @@
-package PACKAGE_NAME;
+public class Shoe extends Product {
 
-public class Shoe {
+    @Override
+    public void setName(String name) {
+
+    }
 }
