@@ -1,3 +1,5 @@
+package pl.przemyslawolesinski.products;
+
 public class Shoe extends Product {
 
     @Override

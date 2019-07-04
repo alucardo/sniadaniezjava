@@ -1,42 +1,46 @@
-import java.util.Scanner;
+import pl.przemyslawolesinski.products.ProductBuilder;
+
+
+// TODO: 2019-07-04
+// 1. Dla każdego product boxu ustawić product null
+// 2. Metoda do sprawdzania czy mamy pusty blok
+// 3. Inicjowanie nowego produktu
+// 3a. Dodanie produktu
+// 3b. Dodanie nr tel
+// 3c. Ustawienie kodu dostępu
+
+
+
+
 
 public class Paczkomat {
 
-    private Scanner scan = new Scanner(System.in);
-    private String name = "paczkomat1";
-    private Product product = new NullProduct();
+    private Gui gui = new Gui();
+    private ProductBox[] productBoxes = new ProductBox[10];
 
-
-    public void sayHello() {
-        System.out.println("Witaj w systemie paczkomat 0.1");
-    }
-
-    public int showBaseMenu() {
-        System.out.println("Wybier odpowiednią akcje:");
-        System.out.println("1. Dodaj produkt");
-        System.out.println("2. Odbierz paczkę");
-        System.out.println("3. Zakończ");
-        return Integer.parseInt(scan.nextLine());
+    public Gui getGui(){
+        return gui;
     }
 
     public void addProduct() {
-        System.out.println("Wybierz produkt do dodania");
-        System.out.println("1. Dodaj buty");
-        int selectedOption = Integer.parseInt(scan.nextLine());
-        if(selectedOption ==  1){
-            if(product.isNull()){
-                product = new Shoe();
-            }else {
-                System.out.println("Produkt już istnieje");
-            }
-        } else {
-            System.out.println("Nie udało się dodać produktu do paczkomatu");
-        }
 
+
+
+
+//        if(productInTheBox()) {
+//            gui.noEmptyBox();
+//        } else {
+//            ProductBuilder.build(gui.showAddMenu());
+////            get free box
+////            set phone and product
+//        }
+
+//        1. Sprawdzamy czy jest pusty box
+//        1a. Jak tak to dodajemy tam produkt
+
+//        1b. Jak nie to wyświetlamy komunikat
     }
 
-    public boolean productInTheBox(){
-        return true;
-    }
+
 
 }
